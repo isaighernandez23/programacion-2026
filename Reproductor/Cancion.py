@@ -1,6 +1,6 @@
 ''' 
 Created on March, 2026
-@author: isaighernandez
+@author: isaighernandez23
 
 '''
 class Cancion:
@@ -26,3 +26,4 @@ class Cancion:
     self.reproduciendo= False
 
     print("REPRODUCCION EN PAUSA")
+
