@@ -1,6 +1,6 @@
 ''' 
 Created on March, 2026
-@author: isaighernandez
+@author: isaighernandez23
 
 '''
 from Menu import *
@@ -16,3 +16,4 @@ menu.dar_bienvenida()
 eleccion = menu.desplegar_menu()
 
 menu.procesar_opciones(eleccion, cancion1)
+
