@@ -1,6 +1,6 @@
 ''' 
 Created on March, 2026
-@author: isaighernandez
+@author: isaighernandez23
 
 '''
 from Cancion import * 
@@ -37,5 +37,6 @@ class Menu:
 
     else:
       print("\nOPCIÓN NO VÁLIDA. INTENTA DE NUEVO.")
+
 
 
