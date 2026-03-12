@@ -1,4 +1,8 @@
+''' 
+Created on March, 2026
+@author: isaighernandez
 
+'''
 from Cancion import * 
 class Menu:
   def __init__(self, mensaje):
@@ -33,4 +37,5 @@ class Menu:
 
     else:
       print("\nOPCIÓN NO VÁLIDA. INTENTA DE NUEVO.")
+
 
