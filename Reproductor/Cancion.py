@@ -1,8 +1,4 @@
-''' 
-Created on March, 2026
-@author: isaighernandez23
-
-'''
+#@ author : isai
 class Cancion:
   def __init__(self, titulo, artista, duracion, genero):
     self.artista = artista
@@ -24,6 +20,4 @@ class Cancion:
 
   def pausar(self):
     self.reproduciendo= False
-
     print("REPRODUCCION EN PAUSA")
-
