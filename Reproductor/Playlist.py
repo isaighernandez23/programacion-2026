@@ -16,5 +16,4 @@ class Playlist:
         tmp += "\nCanción 2::" + str(self.cancion2)
         tmp += "\nCanción 3::" + str(self.cancion3)
         return tmp
-    #def __str__(self):
-     #   return f"  {self.nombre_playlist} Lista de canciones:1.({self.cancion1}, 2.{self.cancion2},3{self.cancion3})"
+   
