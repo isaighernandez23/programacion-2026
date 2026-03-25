@@ -1,9 +1,12 @@
-''' 
+
+     ''' 
 Created on March, 2026
-@author: isaighernandez23
+@author: isaighernandez
 
 '''
 from Cancion import * 
+from Playlist import *
+
 class Menu:
   def __init__(self, mensaje):
     self.mensaje = mensaje
@@ -14,29 +17,33 @@ class Menu:
   def desplegar_menu(self):
     print("¿QUÉ DESEAS HACER?:")
     print("1. CONSULTAR INFORMACIÓN DE LA CANCIÓN")
-    print("2. REPRODUCIR")
-    print("3. DETENER")
-    print("4. SALIR")
-    
+    print("2. REPRODUCIR CANCION")
+    print("3. DETENER CANCION")
+    print("4. REPRODUCIR PLAYLIST")
+    print("5. SALIR")
     opciones = int(input("SELECCIONE UNA OPCIÓN: "))
     return opciones 
 
-  def procesar_opciones(self, opciones, cancion1):
+  def procesar_opciones(self, opciones, cancion1,playlist1):
     if opciones == 1:
-      print(cancion1.informacion_cancion())
-  
-
+      print(cancion1)
+    
     elif opciones == 2:
-      cancion1.reproducir()
+      print(cancion1.reproducir())
 
     elif opciones == 3:
-      cancion1.pausar()
+      print(cancion1.pausar())
 
-    elif opciones == 4:
+    elif opciones== 4:
+      print(playlist1.reproducir())
+      
+    elif opciones == 5:
       print("SALIENDO DEL REPRODUCTOR. ¡VUELVA PRONTO!")
 
     else:
-      print("\nOPCIÓN NO VÁLIDA. INTENTA DE NUEVO.")
+      print("OPCIÓN NO VÁLIDA. INTENTA DE NUEVO.")
+
+
 
 
 
