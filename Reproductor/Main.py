@@ -1,8 +1,9 @@
 ''' 
 Created on March, 2026
-@author: isaighernandez23
+@author: isaighernandez
 
 '''
+from Cancion import *
 from Menu import *
 from Playlist import *
 
@@ -13,7 +14,13 @@ cancion1 = Cancion("Hola", "Isai", 5, "Hip-Hop")
 cancion2= Cancion("i", "k",7,"Jazz")
 cancion3= Cancion("M","T",6,"Rap")
 
-playlist1=Playlist("Rolas",cancion1=cancion1,cancion2=cancion2,cancion3=cancion3)
+playlist1=Playlist("Rolas",cancion1,cancion2)
 
-print(playlist1)
 
+menu = Menu("=== BIENVENIDO A TU BIBLIOTECA MUSICAL ===")
+
+menu.dar_bienvenida()
+
+eleccion = menu.desplegar_menu()
+
+menu.procesar_opciones(eleccion, cancion1,playlist1)
