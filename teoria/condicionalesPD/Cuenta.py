@@ -5,7 +5,7 @@ Created on March, 2026
 '''
 class Cuenta:
   def __init__(self, saldo, tipo, fecha_creacion):
-    self.__saldo = saldo
+    self.saldo = saldo
     self.tipo = tipo
     self.fecha_creacion = fecha_creacion
   
